@@ -1,50 +1,39 @@
-This is the Back-End repository of my Web App, that will display projects information from a database to a client, and allow them to edit it through the Backend.
-SQL file is included with information of the database to create.
+This is the **Back-End repository** of my Web App, which will display project information from a database to a client, and allow them to edit it through the Backend. SQL file is included with information on the database to create.
 
-Front-End Repository can be found as «AP-TPO-Back-End» on this profile.
+**Front-End Repository** can be found as `«AP-TPO-Back-End»` on this profile.
 
-Techlonogies used: Java Spring Boot with Initilizr, JS Angular, MySQL.
+**Technologies used**: Java `Spring Boot` with Initilizr, Javascript `Angular`, `MySQL`.
 
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-This is part of Argentina Programa final Project that includes the following topics, used to make this project:
+***
 
-——Architechture of services:
 
-• Digital skills for programmers
+This is part of _Argentina Programa_ final Project that includes the following topics, used to do this project:
 
-• Web architecture
+## Architechture of services:
 
-• Distributed WEB architecture (Frontend and Backend).
+• Digital skills for programmers. <br>
+• Web architecture.<br>
+• Distributed WEB architecture (Frontend and Backend).<br>
+• HTTP protocol request process (GET, POST, PUT).<br>
 
-• HTTP protocol request process (GET, POST, PUT).
+## Web Development Front-End:
 
-——Web Development Front-End: 
+• HTML, CSS, Javascript, and TypeScript programming concepts, variables, and data types.<br>
+• Bootstrap from scratch.<br>
+• Typescript programming concepts, operators, methods, and variables. Digital skills for programmers.<br>
+• Angular from scratch.<br>
 
-• HTML, CSS, Javascript and TypeScript programming concepts, variables and data types.
+## Web Development Back-end:
 
-• Bootstrap from scratch.
+• MySQL, Databases, and JSON.<br>
+• Object Oriented Programming OOP, UML, and Good Practices.<br>
+• Java programming concepts.<br>
+• Java Web programming concepts.<br>
+• Spring Boot Framework.<br>
 
-• Typescript programming concepts, operators, methods, variables. Digital skills for programmers.
+## Project and work management:
 
-• Angular from scratch.
-
-——Web Development Back-end:
-
-• MySQL, Databases and JSON
-
-• Object Oriented Programming OOP, UML and Goo Practices.
-
-• Java programming concepts.
-
-• Java Web programming concepts.
-
-• Spring Boot Framework.
-
-——Project and work management:
-
-• SCRUM
-
-• Git and Github
-
-• DevOps
+• SCRUM.<br>
+• Git and Github.<br>
+• DevOps.<br>
