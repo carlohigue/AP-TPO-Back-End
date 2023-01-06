@@ -1,9 +1,7 @@
 This is the Back-End repository of my Web App, that will display projects information from a database to a client, and allow them to edit it through the Backend.
 This is part of Argentina Programa final Project that includes the following topics, used to make this project:
 
-
-
-Architechture of services:
+——Architechture of services:
 
 • Digital skills for programmers
 
@@ -13,9 +11,7 @@ Architechture of services:
 
 • HTTP protocol request process (GET, POST, PUT).
 
-
-
-Web Development Front-End: 
+——Web Development Front-End: 
 
 • HTML, CSS, Javascript and TypeScript programming concepts, variables and data types.
 
@@ -25,9 +21,7 @@ Web Development Front-End:
 
 • Angular from scratch.
 
-
-
-Web Development Back-end:
+——Web Development Back-end:
 
 • MySQL, Databases and JSON
 
@@ -39,9 +33,7 @@ Web Development Back-end:
 
 • Spring Boot Framework.
 
-
-
-Project and work management:
+——Project and work management:
 
 • SCRUM
 
