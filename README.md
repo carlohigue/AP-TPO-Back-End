@@ -1,6 +1,10 @@
 This is the Back-End repository of my Web App, that will display projects information from a database to a client, and allow them to edit it through the Backend.
 SQL file is included with information of the database to create.
 
+Front-End Repository can be found as AP-TPO-Back-End on this profile.
+
+Techlonogies used: Java Spring Boot with Initilizr, JS Angular, MySQL.
+
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 This is part of Argentina Programa final Project that includes the following topics, used to make this project:
