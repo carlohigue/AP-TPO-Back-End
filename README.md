@@ -2,11 +2,9 @@ This is the **Back-End repository** of my Web App, which will display project in
 
 **Front-End Repository** can be found as `«AP-TPO-Back-End»` on this profile.
 
-**Technologies used**: Java `Spring Boot` with Initilizr, Javascript `Angular`, `MySQL`.
-
-
 ***
 
+**Technologies used**: Java `Spring Boot` with Initilizr, Javascript `Angular`, `MySQL`.
 
 This is part of _Argentina Programa_ final Project that includes the following topics, used to do this project:
 
