@@ -4,6 +4,8 @@ This is the **Back-End repository** of my Web App, which will display project in
 
 **Front-End Repository** can be found as `«AP-TPO-Front-End»` on this profile.
 
+In case you may use futher information on the making and planning of this project, [[Click in here]](https://github.com/carlohigue/AP-TPO-Front-End/blob/main/ProjectPlan/EstimationsAndConclusions.md "[Click in here]").
+
 ***
 
 **Technologies used**: Java `Spring Boot` with Initilizr, Javascript `Angular`, `MySQL`.
