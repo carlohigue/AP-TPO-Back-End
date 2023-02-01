@@ -7,10 +7,6 @@ package com.CrudCode.Service;
 import com.CrudCode.Model.Project;
 import java.util.List;
 
-/**
- *
- * @author yonder
- */
 public interface ProjectService {
     public List<Project> findAll();
     public Project save(Project tarea);
