@@ -28,10 +28,11 @@ public class UserController {
     private UserService userService;
     
     @PostMapping("/login")
-    public ResponseEntity<?> authUser(@RequestBody User userData){
+    public ResponseEntity<User> authUser(@RequestBody User userData){
         User user = userService.getUser(userData.getUserId());
         if(user.getPassword().equals(userData.getPassword())){
-            return ResponseEntity.ok(user.getRole());
+            user.setPassword(null);
+            return ResponseEntity.ok(user);
         }
         return null;
     }
