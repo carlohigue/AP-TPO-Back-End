@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author yonder
+ * @author Higuerey
  */
 @RestController
 @CrossOrigin(origins={"*"})
