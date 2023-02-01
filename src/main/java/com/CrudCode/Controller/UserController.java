@@ -35,4 +35,9 @@ public class UserController {
         }
         return null;
     }
+    
+    @GetMapping("/test")
+    public String Test(){
+        return "test on user/login";
+    }
 }
