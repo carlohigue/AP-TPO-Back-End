@@ -31,7 +31,7 @@ public class UserController {
     public ResponseEntity<?> authUser(@RequestBody User userData){
         User user = userService.getUser(userData.getUserId());
         if(user.getPassword().equals(userData.getPassword())){
-            return ResponseEntity.ok(user.getUserId() +'~'+ user.getRole());
+            return ResponseEntity.ok(user.getRole());
         }
         return null;
     }
