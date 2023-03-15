@@ -4,48 +4,49 @@
  */
 package com.CrudCode.Service;
 
-import com.CrudCode.Model.Project;
+import com.CrudCode.Dao.ExperienceDao;
+import com.CrudCode.Model.Experience;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.CrudCode.Dao.ProjectDao;
 
 /**
  *
  * @author Higuerey
  */
 
+
 @Service
-public class ProjectServiceImplement  implements ProjectService{
+public class ExperienceServiceImplement implements ExperienceService{
     @Autowired
-    private ProjectDao projectDao;
+    private ExperienceDao experienceDao;
     
-    @Override
     @Transactional(readOnly=true)
-    public List<Project> findAll()
+    @Override
+    public List<Experience> findAll()
     {
-        return (List<Project>) projectDao.findAll();
+        return (List<Experience>) experienceDao.findAll();
     }
     
-    @Override
     @Transactional(readOnly=false)
-    public Project save(Project project)
+    @Override
+    public Experience save(Experience exp)
     {
-        return projectDao.save(project);
+        return experienceDao.save(exp);
     }
     
-    @Override
     @Transactional(readOnly=true)
-    public Project findById(Integer id)
+    @Override
+    public Experience findById(Integer id)
     {
-        return projectDao.findById(id).orElse(null);
+        return experienceDao.findById(id).orElse(null);
     }
     
     @Override
     @Transactional(readOnly=false)
     public void delete(Integer id)
     {
-        projectDao.deleteById(id);
+        experienceDao.deleteById(id);
     }
 }

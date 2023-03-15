@@ -4,12 +4,12 @@
  */
 package com.CrudCode.Service;
 
-import com.CrudCode.Model.Project;
+import com.CrudCode.Dao.AbilitiesDao;
+import com.CrudCode.Model.Abilities;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.CrudCode.Dao.ProjectDao;
 
 /**
  *
@@ -17,35 +17,35 @@ import com.CrudCode.Dao.ProjectDao;
  */
 
 @Service
-public class ProjectServiceImplement  implements ProjectService{
+public class AbilitiesServiceImplement implements AbilitiesService{
     @Autowired
-    private ProjectDao projectDao;
+    private AbilitiesDao abilitiesDao;
     
     @Override
     @Transactional(readOnly=true)
-    public List<Project> findAll()
+    public List<Abilities> findAll()
     {
-        return (List<Project>) projectDao.findAll();
+        return (List<Abilities>) abilitiesDao.findAll();
     }
     
-    @Override
     @Transactional(readOnly=false)
-    public Project save(Project project)
-    {
-        return projectDao.save(project);
-    }
-    
     @Override
-    @Transactional(readOnly=true)
-    public Project findById(Integer id)
+    public Abilities save(Abilities ablt)
     {
-        return projectDao.findById(id).orElse(null);
+        return abilitiesDao.save(ablt);
     }
     
+    @Transactional(readOnly=true)
+    @Override
+    public Abilities findById(Integer id)
+    {
+        return abilitiesDao.findById(id).orElse(null);
+    }
+        
     @Override
     @Transactional(readOnly=false)
     public void delete(Integer id)
     {
-        projectDao.deleteById(id);
+        abilitiesDao.deleteById(id);
     }
 }

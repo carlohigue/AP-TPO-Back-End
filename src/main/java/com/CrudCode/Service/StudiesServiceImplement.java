@@ -4,12 +4,12 @@
  */
 package com.CrudCode.Service;
 
-import com.CrudCode.Model.Project;
+import com.CrudCode.Dao.StudiesDao;
+import com.CrudCode.Model.Studies;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.CrudCode.Dao.ProjectDao;
 
 /**
  *
@@ -17,35 +17,35 @@ import com.CrudCode.Dao.ProjectDao;
  */
 
 @Service
-public class ProjectServiceImplement  implements ProjectService{
+public class StudiesServiceImplement implements StudiesService{
     @Autowired
-    private ProjectDao projectDao;
+    private StudiesDao studiesDao;
     
-    @Override
     @Transactional(readOnly=true)
-    public List<Project> findAll()
+    @Override
+    public List<Studies> findAll()
     {
-        return (List<Project>) projectDao.findAll();
+        return (List<Studies>) studiesDao.findAll();
     }
     
-    @Override
     @Transactional(readOnly=false)
-    public Project save(Project project)
+    @Override
+    public Studies save(Studies studies)
     {
-        return projectDao.save(project);
+        return studiesDao.save(studies);
     }
     
-    @Override
     @Transactional(readOnly=true)
-    public Project findById(Integer id)
+    @Override
+    public Studies findById(Integer id)
     {
-        return projectDao.findById(id).orElse(null);
+        return studiesDao.findById(id).orElse(null);
     }
     
     @Override
     @Transactional(readOnly=false)
     public void delete(Integer id)
     {
-        projectDao.deleteById(id);
+        studiesDao.deleteById(id);
     }
 }
